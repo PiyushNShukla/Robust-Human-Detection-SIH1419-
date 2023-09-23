@@ -1,0 +1,219 @@
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #4d5156;
+    line-height: 1.6;
+    height: 80vh;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #4d5156;
+    transition: all 1.5s ease-in;
+    
+}
+.container:hover {
+    /* max-width: 960px;
+    margin: 0 auto;
+    padding: 20px; */
+    color: #61c8e4;
+}
+.button_hero{
+    text-decoration: none;
+    box-shadow: 0px 0px 5px white;
+    padding: 10px;
+    color:rgb(148, 215, 168);
+    transition: all .5s ease-in;
+}
+.button_hero:hover{
+    text-decoration: none;
+    box-shadow: 0px 2px 10px rgb(236, 196, 122);
+    padding: 10px;
+    color:rgb(48, 162, 244);
+    border:2px solid black;
+}
+
+
+header {
+    background-color: #333;
+    color: #f8f7f7;
+    padding: 10px 0;
+    border-radius: 5px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(16, 15, 15);
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f6f6;
+}
+
+/* Hero section */
+#hero {
+    /*background-image: url('laptop_keyboard_glow_170138_1280x720.jpg'); Replace with your image URL*/
+    background-size: cover;
+    color: #141313;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #141313;
+    height: 100vh;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background-color: #141313;
+    /* background-color: (116, 82, 82); */
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #105d31;
+    color: #0e0d0d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* About, Services, Portfolio, and Contact sections */
+section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Contact form */
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #hero {
+        padding: 80px 0;
+    }
+
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
+
+.ab:hover {
+    color:rgb(147, 147, 213);
+    box-shadow: 0px 0px 2px white;
+    border-radius: 2px;
+    
+
+}
+img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left:0;
+    margin:-37px;
+}
+/* .nameScroll{
+    position:fixed;
+    bottom: 0px;
+    color: rgb(218, 197, 102);
+} */

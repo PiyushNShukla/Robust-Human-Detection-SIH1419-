@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <style>
+        /* Your CSS styles for the contact page */
+        body {
+            font-family: 'Open Sans', sans-serif; /* Replace with the desired font name */
+            background-color: #141414; /* Replace with the desired background color */
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif; /* Font for the heading */
+            color: #fdfafa; /* Text color for the heading */
+            background-color: #14650ff4; /* Background color for the heading */
+            padding: 10px; /* Add some padding for visibility */
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif; /* Font for paragraphs */
+            color: #f0e9e9; /* Text color for paragraphs */
+            background-color: #080808; /* Background color for paragraphs */
+            padding: 10px; /* Add some padding for visibility */
+        }
+      
+    </style>
+</head>
+
+<body>
+    <h1>Information</h1>
+    <p>Certainly, here are sequential points to describe the whole project in simple language, highlighting the key topics and components used:</p>
+    <p>1. *Data Preparation*:
+        - The project begins with the preparation of video data for human action recognition.
+        - Videos are divided into training and testing sets and stored in CSV files.
+        - OpenCV is used to load and preprocess video frames for further analysis.
+    </p>
+    <p>2. *YOLOv5 for Person Detection*:
+        - YOLOv5, a real-time object detection model, is employed to identify persons in video frames.
+        - The YOLOv5 model is pre-trained and capable of detecting multiple objects in each frame.</p>
+    <p>3. *Feature Extraction with InceptionV3*:
+        - InceptionV3, a deep convolutional neural network, is utilized to extract features from video frames.
+        - These features capture meaningful information that will be used for action recognition.</p>
+    <p>4. *RNN-Based Action Recognition*:
+        - A recurrent neural network (RNN), specifically a Bidirectional LSTM, is employed for action recognition.
+        - RNNs are chosen for their ability to handle sequential data and capture temporal dependencies.</p>
+    <p>5. *Training and Testing Data*:
+        - The video data is split into training and testing sets.
+        - The training data is used to train the action recognition model, while the testing data is used to evaluate its performance.</p>
+    <p>6. *Data Augmentation*:
+        - Data augmentation techniques, such as rotation, shifting, and brightness adjustments, are applied to video frames to increase the model's robustness.</p>
+    <p>7. *Action Labeling and Encoding*:
+        - Labels for different actions (e.g., "standing," "walking") are assigned to video sequences.
+        - These labels are encoded into numerical values to facilitate model training.</p>
+    <p>8. *Sequence Prediction*:
+        - For each detected person in a video frame, the action recognition model predicts the action label using the extracted features.
+        - Actions are displayed on the frame as text and color-coded bounding boxes.</p>
+    <p>9. *Real-Time Action Recognition*:
+        - The entire project is designed to work in real-time, processing video frames as they are captured from a webcam.</p>
+    <p>10. *Continuous Video Processing*:
+        - The project continuously captures video frames, performs person detection and action recognition, and displays the results in a window.
+        - The video processing loop continues until the user presses the 'q' key.</p>
+    <p>11. *Model Optimization and Evaluation*:
+        - The model is optimized by fine-tuning hyperparameters, choosing suitable architectures, and addressing issues like overfitting.
+        - The model's performance is evaluated using the testing data, and accuracy metrics are calculated.
+    <p>12. *User Interaction*:
+        - The user interacts with the project by starting and stopping video processing through keyboard input ('q' key).</p>
+</body>
+
+</html>
